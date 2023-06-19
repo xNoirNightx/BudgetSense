@@ -105,12 +105,15 @@ window.addEventListener('load', function() {
   const savedData = localStorage.getItem('expenseData');
   if (savedData) {
     const data = JSON.parse(savedData);
-    // if you add additionall expenses add more lines with the correct # ( ex next is 5)
+    // if you add additionall expenses add more lines with the correct # ( ex next is 8)
     document.getElementById('data1').value = data[0].value;
     document.getElementById('data2').value = data[1].value;
     document.getElementById('data3').value = data[2].value;
     document.getElementById('data4').value = data[3].value;
     document.getElementById('data5').value = data[4].value;
+    document.getElementById('data5').value = data[5].value;
+    document.getElementById('data5').value = data[6].value;
+    document.getElementById('data5').value = data[7].value;
     document.getElementById('culminate').click();
   }
 });
